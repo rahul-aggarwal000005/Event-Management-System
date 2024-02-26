@@ -16,7 +16,6 @@ const saveEvent = async (req, res) => {
 // find all events
 const findAllEvents = async (req, res) => {
   try {
-    console.log("checking");
     const events = await Event.find();
     return res.status(200).json(events);
   } catch (error) {
